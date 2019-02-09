@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&amp;subset=latin-ext" rel="stylesheet">
+    <title>Animation CSS&JS</title>
+</head>
+
+<body>
+    <button>WYŁĄCZ</button>
+    <ul>
+        <li>A</li>
+        <li>L</li>
+        <li>E</li>
+        <li>K</li>
+        <li>S</li>
+        <li>A</li>
+        <li>N</li>
+        <li>D</li>
+        <li>E</li>
+        <li>R</li>
+        <li>.</li>
+        <li>G</li>
+        <li>O</li>
+        <li>R</li>
+        <li>C</li>
+        <li>Z</li>
+        <li>Y</li>
+        <li>K</li>
+    </ul>
+
+
+    <script>
+        var button =
+            document.querySelector("button");
+        button.addEventListener("click", function() {
+            if (this.textContent == "WŁĄCZ") {
+                this.textContent = "WYŁĄCZ";
+            } else {
+                this.textContent = "WŁĄCZ";
+            }
+            const letters =
+                document.querySelectorAll("li");
+            for (var i = 0; letters.length > i; i++) {
+                letters[i].classList.toggle("off");
+            }
+        })
+    </script>
+</body>
+
+</html>

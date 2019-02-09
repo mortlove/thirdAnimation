@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    height: 100vh;
+    background: -webkit-gradient(linear, left top, right top, from(#33ccff), color-stop(90%, #ff99cc));
+    background: linear-gradient(to right, #33ccff 0%, #ff99cc 90%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+button {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
+ul {
+    margin: auto;
+    font-family: 'Alfa Slab One';
+}
+
+
+li {
+    color: beige;
+    font-size: 35px;
+    display: inline-block;
+    letter-spacing: 5px;
+    text-shadow: 0 0 30px black, 0 0 10px aqua;
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+}
+
+li:nth-child(1) {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg) translateY(5px);
+    -webkit-animation: neon 2s infinite;
+    animation: neon 2s infinite linear;
+}
+
+li:nth-child(12) {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg) translateY(5px);
+    -webkit-animation: neon 2s infinite;
+    animation: neon 2s infinite linear;
+}
+
+.off {
+    opacity: 0;
+}
+
+@-webkit-keyframes neon {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    60% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes neon {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
